@@ -19,7 +19,7 @@ class CommentsTableSeeder extends Seeder
 
         $faker = \Faker\Factory::create();
 
-        for ($i = 0; $i < 10; $i++) {
+        for ($i = 0; $i < 5; $i++) {
             Comment::create([
                 'body' => $faker->paragraph,
                 'user_id' => $faker->numberBetween(1, 5),
